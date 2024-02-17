@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "author": "ksparsh",
+  "keywords": [],
+  "homepage": "https://github.com/ksparsh2011/react-basics/blob/main/README.md",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^3.4.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "browserslist": [
+    "last 2 chrome version"
+  ]
+}

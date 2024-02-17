@@ -1,0 +1,73 @@
+/* Global Styles */
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Heading Styles */
+#heading {
+  color: red;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  background-color: rgba(13, 63, 119, 0.808);
+}
+
+/* Logo Styles */
+.logo {
+  width: 200px;
+}
+
+/* Navigation Styles */
+.nav-items {
+  padding: 0 20px;
+}
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 10px;
+  color: whitesmoke;
+}
+
+/* Responsive Container Styles */
+.res-container {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Book Card Styles */
+.book-card {
+  margin: 4px;
+  padding: 5px;
+  width: 250px;
+  height: 530px;
+  background-color: rgb(155, 210, 226);
+  transition: border-color 0.3s ease;
+}
+
+.book-card:hover {
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.book-card-image {
+  width: 100%;
+}
+
+.book-card-logo {
+  width: 90px;
+}
+
+/* Search Bar Styles */
+.searchBar {
+  padding: 10px;
+}
