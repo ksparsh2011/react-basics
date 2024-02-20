@@ -4,16 +4,21 @@ export default BookCard = (props) => {
   const { booksData } = props;
   const { Name, Author, Price, Rating, ImageId } = booksData;
   return (
-    <div className="book-card">
+    <div className="margin-btm-10">
+    <div className="book-card margin-btm-4">
       <img
-        className="book-card-image"
+        className="book-card-image "
         alt="book-card-logo"
         src={IMAGE_CDN + ImageId}
       />
-      <h3>{Name}</h3>
-      <h4>{Author}</h4>
-      <h4>{Price}</h4>
-      <h4>{Rating} </h4>
-    </div>
+      </div>
+      <div className="details-container">
+      <div className="book-name margin-btm-4">{Name}</div>
+      <div className="author-name margin-btm-4">{Author?Author:'Unknown'}</div>
+      <div className="book-cost margin-btm-4"><span>&#8377;</span> {Price}</div>
+      <div className="book-rating">{Rating}</div>
+      </div>
+      </div>
+   
   );
 };

@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 export default Body = () => {
   let [listOfBooks, setListOfBooks] = useState(booksList);
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
   const fetchData = async () => {
     const data = await fetch("http://localhost:3000/api/getBooks");
