@@ -27,3 +27,26 @@
 
 - class based component -old
 - Functional component - new(Basically nothing but js function that return some piece of jsx).
+
+# props
+
+- just similar to arguments in function.
+- usually used to dynamically use data in a component.
+
+# React says never use index as keys.
+
+# Named and Default export
+
+    -Default Export
+        export default newVar
+        import newVar from "..."
+        only one default export is allowed in one file.
+
+    -Named Export
+        export newVar
+        import {newVar} from "..."
+
+# React Hooks
+
+- Normally a JS function
+- useState() - state variable
