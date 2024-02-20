@@ -18,7 +18,7 @@ export default Body = () => {
 
   return (
     <div className="body">
-      <div className="filter">
+      {/* <div className="filter">
         <button
           className="filter-btn"
           onClick={() => {
@@ -27,7 +27,7 @@ export default Body = () => {
         >
           Top Rated Books
         </button>
-      </div>
+      </div> */}
       <div className="res-container">
         {listOfBooks.map((book) => (
           <BookCard key={book.id} booksData={book} />
