@@ -142,6 +142,15 @@ margin-bottom: 4px;
   padding: 20px;
   text-align: end;
 }
+.filter-btn{
+  background-color: #3c6491;
+  border-radius: 6px;
+  width: 200px;
+  height: 28px;
+  color: white;
+  cursor: pointer;
+}
+
   
 
 

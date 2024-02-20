@@ -1,6 +1,10 @@
 import { LOGO_URL } from "../../utils/constants";
 
 export default Header = () => {
+
+
+
+
   return (
     <div>
     <div className="header">
@@ -16,12 +20,14 @@ export default Header = () => {
         </ul>
       </div>
     </div>
-    <div className="sub-header">
+    {/* <div className="sub-header">
     <div class="search-container">
-    <input type="text" class="search-input" placeholder="Search..."></input>
+    <input type="text" class="search-input" placeholder="Search..." 
+    value={searchTerm}
+    onChange={handleInputChange}></input>
     <i class="search-icon">🔍</i>
     </div>
-    </div>
+    </div> */}
     </div>
 
   );
