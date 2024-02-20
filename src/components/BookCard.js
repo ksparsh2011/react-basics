@@ -18,6 +18,7 @@ export default BookCard = (props) => {
       <div className="book-cost margin-btm-4"><span>&#8377;</span> {Price}</div>
       <div className="book-rating">{Rating}</div>
       </div>
+      <button className="blue-btn">Buy Now</button>
       </div>
    
   );

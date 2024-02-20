@@ -106,7 +106,15 @@ color: black;
 margin-bottom: 4px;
 }
 .margin-btm-10{
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+}
+.blue-btn{
+  background-color: #3c6491;
+  border-radius: 6px;
+  width: 91px;
+  height: 28px;
+  color: white;
+  cursor: pointer;
 }
   
 
