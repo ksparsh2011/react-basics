@@ -1,13 +1,12 @@
 import BookCard from "./BookCard";
-import { booksList } from "../../data";
 import { useEffect, useState } from "react";
 
 export default Body = () => {
-  let [listOfBooks, setListOfBooks] = useState(booksList);
+  const [listOfBooks, setListOfBooks] = useState([]);
 
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   const fetchData = async () => {
     const data = await fetch("http://localhost:3000/api/getBooks");
@@ -17,7 +16,7 @@ export default Body = () => {
   };
   return (
     <div className="body">
-      {/* <div className="filter">
+      <div className="sub-header">
         <button
           className="filter-btn"
           onClick={() => {
@@ -26,24 +25,15 @@ export default Body = () => {
         >
           Top Rated Books
         </button>
-      </div> */}
-          <div className="sub-header">
-             <button
-          className="filter-btn"
-          onClick={() => {
-            setListOfBooks(listOfBooks.filter((book) => book.Rating > 4.5));
-          }}
-        >
-          Top Rated Books
-        </button>
-    <div class="search-container">
-    <input type="text" 
-    class="search-input" 
-    placeholder="Search..." 
-    ></input>
-    <i class="search-icon">🔍</i>
-    </div>
-    </div>
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search..."
+          ></input>
+          <i class="search-icon">🔍</i>
+        </div>
+      </div>
       <div className="res-container">
         {listOfBooks.map((book) => (
           <BookCard key={book.id} booksData={book} />
