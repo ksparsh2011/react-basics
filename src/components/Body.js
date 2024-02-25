@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 
 export default Body = () => {
   const [listOfBooks, setListOfBooks] = useState([]);
+  const [searchText, setSearchText] = useState("");
+  const [filteredBooks, setFilteredbooks] = useState([]);
 
   useEffect(() => {
     fetchData();
@@ -13,6 +15,7 @@ export default Body = () => {
 
     const json = await data.json();
     setListOfBooks(json);
+    setFilteredbooks(json);
   };
   return (
     <div className="body">
@@ -20,7 +23,7 @@ export default Body = () => {
         <button
           className="filter-btn"
           onClick={() => {
-            setListOfBooks(listOfBooks.filter((book) => book.Rating > 4.5));
+            setListOfBooks(filteredBooks.filter((book) => book.Rating > 4.5));
           }}
         >
           Top Rated Books
@@ -28,14 +31,27 @@ export default Body = () => {
         <div class="search-container">
           <input
             type="text"
-            class="search-input"
+            className="search-input"
             placeholder="Search..."
+            onChange={(e) => {
+              setSearchText(e.target.value);
+            }}
           ></input>
-          <i class="search-icon">🔍</i>
+          <i
+            className="search-icon"
+            onClick={() => {
+              const filteredBooks = listOfBooks.filter((book) =>
+                book.title.toLowerCase().includes(searchText.toLowerCase())
+              );
+              setFilteredbooks(filteredBooks);
+            }}
+          >
+            🔍
+          </i>
         </div>
       </div>
       <div className="res-container">
-        {listOfBooks.map((book) => (
+        {filteredBooks.map((book) => (
           <BookCard key={book.id} booksData={book} />
         ))}
       </div>
