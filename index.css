@@ -60,7 +60,6 @@ body {
 
 .book-card:hover {
   cursor: pointer;
-  
 }
 
 .book-card-image {
@@ -77,38 +76,40 @@ body {
 }
 
 .filter-btn {
-  margin: 10px;
+  margin: 20px;
   cursor: pointer;
+  align-self: center;
+  text-align: center;
+  padding: 5px 10px;
 }
-.details-container{
+.details-container {
   margin: 8px;
 }
-.book-name{
-font-size: 18px;
-font-weight: bold;
-color: black;
+.book-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
 }
-.author-name{
+.author-name {
   font-size: 16px;
   color: 5b5858;
-
 }
-.book-cost{
+.book-cost {
   font-size: 16px;
   color: black;
   font-weight: bold;
 }
-.book-rating{
+.book-rating {
   font-size: 16px;
   color: #5b5858;
 }
-.margin-btm-4{
-margin-bottom: 4px;
+.margin-btm-4 {
+  margin-bottom: 4px;
 }
-.margin-btm-10{
+.margin-btm-10 {
   margin-bottom: 25px;
 }
-.blue-btn{
+.blue-btn {
   background-color: #3c6491;
   border-radius: 6px;
   width: 91px;
@@ -137,12 +138,12 @@ margin-bottom: 4px;
   color: #555;
   cursor: pointer;
 }
-.sub-header{
+.sub-header {
   background: #e5e1e1;
   padding: 20px;
   text-align: end;
 }
-.filter-btn{
+.filter-btn {
   background-color: #3c6491;
   border-radius: 6px;
   width: 200px;
@@ -150,8 +151,226 @@ margin-bottom: 4px;
   color: white;
   cursor: pointer;
 }
+.header {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 0;
+}
 
-  
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
+.logo {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 24px;
+  margin-right: 130px; /* Adjusted margin */
+}
 
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
+.navigation ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navigation ul li:last-child {
+  margin-right: 140;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding-right: 20px;
+}
+
+.navigation ul li a:hover {
+  color: #2b59ff; /* Change color on hover */
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.login-btn,
+.signup-btn,
+.cta-btn {
+  margin-left: 10px; /* Adjusted margin */
+  padding: 10px 20px; /* Reduced padding */
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px; /* Reduced font size */
+  font-weight: 300; /* Reduced font weight */
+  border: 2px solid transparent; /* Add consistent border for all buttons */
+  border-radius: 5px; /* Rounded corners for buttons */
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.cta-btn {
+  background-color: #2b59ff;
+  color: #fff;
+}
+
+.login-btn,
+.signup-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.login-btn:hover,
+.signup-btn:hover,
+.cta-btn:hover {
+  background-color: #fff;
+  color: #2b59ff;
+}
+
+.login-btn {
+  padding: 10px;
+}
+
+.signup-btn {
+  padding: 10px;
+}
+
+.about-us {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.about-us h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-us p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.footer-container {
+  background-color: #222;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  background-color: #111;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.contact-container {
+  margin-top: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 10px;
+  text-align: center;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.contact-heading {
+  color: white;
+}
+.contact-info {
+  margin-bottom: 40px;
+  color: white;
+  padding-right: 20px;
+}
+
+.contact-form {
+  text-align: left;
+  color: white;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  margin-inline-end: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.radioButtons {
+  display: flex;
+  align: center;
+}

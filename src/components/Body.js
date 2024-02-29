@@ -28,7 +28,7 @@ export default Body = () => {
         >
           Top Rated Books
         </button>
-        <div class="search-container">
+        <div className="search-container">
           <input
             type="text"
             className="search-input"

@@ -1,34 +1,32 @@
 import { LOGO_URL } from "../../utils/constants";
 
 export default Header = () => {
-
-
-
-
   return (
-    <div>
-    <div className="header">
-      <div className="logo-container">
-        <img className="logo" src={LOGO_URL} />
+    <header className="header">
+      <div className="container">
+        <div className="logo">Pages &amp; Verses</div>
+        <nav className="navigation">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Books</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div className="buttons">
+          <button className="login-btn">Login</button>
+          <button className="signup-btn">Sign Up</button>
+          <button className="cta-btn">Shop Now</button>
+        </div>
       </div>
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Shopping Cart</li>
-        </ul>
-      </div>
-    </div>
-    {/* <div className="sub-header">
-    <div class="search-container">
-    <input type="text" class="search-input" placeholder="Search..." 
-    value={searchTerm}
-    onChange={handleInputChange}></input>
-    <i class="search-icon">🔍</i>
-    </div>
-    </div> */}
-    </div>
-
+    </header>
   );
 };
