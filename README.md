@@ -50,3 +50,9 @@
 
 - Normally a JS function
 - useState() - state variable
+
+# Use Effect()
+
+    - if no dependency array is given, use effect will be called after every render.
+    - if it is present and empty then used effect is called only on initial render, just once.
+    - if there is somedependency is present in array, it will be called on every time dependency is changed.
