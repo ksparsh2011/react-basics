@@ -1,28 +1,24 @@
 import { IMAGE_CDN } from "../../utils/constants";
 
 export default BookCard = (props) => {
-  const { booksData } = props;
-  const { title, authors, price, pageCount, thumbnailId } = booksData;
+  const { productData } = props;
+  const { name, description, price, category, thumbnailId } = productData;
   return (
-    <div className="margin-btm-10">
-      <div className="book-card margin-btm-4">
+    <div className="book-card-container">
+      <div className="book-card-image-wrapper">
         <img
-          className="book-card-image "
-          alt="book-card-logo"
+          className="book-card-image"
           src={IMAGE_CDN + thumbnailId}
+          alt="book-card-logo"
         />
       </div>
-      <div className="details-container">
-        <div className="book-name margin-btm-4">{title}</div>
-        <div className="author-name margin-btm-4">
-          {authors ? authors.join("") : "Unknown"}
-        </div>
-        <div className="book-cost margin-btm-4">
-          <span>&#8377;</span> {price}
-        </div>
-        <div className="book-rating">{pageCount}</div>
+      <div className="book-details">
+        <div className="book-name">{name}</div>
+        <div className="book-description">{description || "Unknown"}</div>
+        <div className="book-price">&#8377; {price}</div>
+        <div className="book-category">{category}</div>
+        <button className="buy-btn">Buy Now</button>
       </div>
-      <button className="blue-btn">Buy Now</button>
     </div>
   );
 };

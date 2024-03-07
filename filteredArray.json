@@ -1,0 +1,173 @@
+[
+  {
+    "id": 27,
+    "title": "Home Decor",
+    "level_3": [
+      {
+        "id": 98,
+        "title": "All Home Decor",
+        "page": {
+          "type": "PRODUCT_LISTING_PAGE",
+          "slug": "home-decor",
+          "ss_id": [
+            "1445"
+          ]
+        },
+        "category_icon": "https://images.meesho.com/images/marketing/1628503526983.png"
+      },
+      {
+        "id": 203,
+        "title": "Appliances Covers",
+        "page": {
+          "type": "PRODUCT_LISTING_PAGE",
+          "slug": "appliance-cover",
+          "ss_id": [
+            "2242"
+          ]
+        },
+        "category_icon": "https://images.meesho.com/images/marketing/1628503776002.png"
+      },
+      {
+        "id": 100,
+        "title": "Clocks",
+        "page": {
+          "type": "PRODUCT_LISTING_PAGE",
+          "slug": "clocks",
+          "ss_id": [
+            "1440"
+          ]
+        },
+        "category_icon": "https://images.meesho.com/images/marketing/1628501425651.png"
+      },
+      {
+        "id": 204,
+        "title": "Storage & Organizers",
+        "page": {
+          "type": "PRODUCT_LISTING_PAGE",
+          "slug": "organizer-",
+          "ss_id": [
+            "2191"
+          ]
+        },
+        "category_icon": "https://images.meesho.com/images/marketing/1627308536034.png"
+      },
+      {
+        "id": 101,
+        "title": "Showpieces",
+        "page": {
+          "type": "PRODUCT_LISTING_PAGE",
+          "slug": "show-pieces-home",
+          "ss_id": [
+            "1615"
+          ]
+        },
+        "category_icon": "https://images.meesho.com/images/marketing/1628503539564.png"
+      },
+      {
+        "id": 205,
+        "title": "Paintings & Photoframes",
+        "page": {
+          "type": "PRODUCT_LISTING_PAGE",
+          "slug": "photo-frames",
+          "ss_id": [
+            "1617"
+          ]
+        },
+        "category_icon": "https://images.meesho.com/images/marketing/1627308906380.png"
+      },
+      {
+        "id": 206,
+        "title": "Stickers & Wallpapers",
+        "page": {
+          "type": "PRODUCT_LISTING_PAGE",
+          "slug": "home-wallpapers",
+          "ss_id": [
+            "1613"
+          ]
+        },
+        "category_icon": "https://images.meesho.com/images/marketing/1627308916920.png"
+      },
+      {
+        "id": 207,
+        "title": "Lights",
+        "page": {
+          "type": "PRODUCT_LISTING_PAGE",
+          "slug": "home-decoration-lights",
+          "ss_id": [
+            "1439",
+            "2289",
+            "3387",
+            "2365",
+            "2354",
+            "3495",
+            "2493",
+            "2247",
+            "2847",
+            "2372",
+            "2266",
+            "3362",
+            "2523",
+            "2245",
+            "3490",
+            "2419",
+            "2378",
+            "2509",
+            "2358",
+            "1445",
+            "2411",
+            "4405",
+            "1701",
+            "1134",
+            "4166",
+            "2397",
+            "4065",
+            "1437",
+            "2393",
+            "4628",
+            "2540",
+            "2422",
+            "2339",
+            "2624",
+            "4936",
+            "4212",
+            "2753",
+            "2502",
+            "2846",
+            "2396",
+            "2400",
+            "5192",
+            "2510",
+            "3298",
+            "3390",
+            "2193",
+            "1416",
+            "5108",
+            "2537",
+            "1620",
+            "2060",
+            "4079",
+            "2222",
+            "4957",
+            "2316",
+            "3333",
+            "2719",
+            "2213"
+          ]
+        },
+        "category_icon": "https://images.meesho.com/images/marketing/1628503759540.png"
+      },
+      {
+        "id": 208,
+        "title": "Gifts & Mugs",
+        "page": {
+          "type": "PRODUCT_LISTING_PAGE",
+          "slug": "gifts-mugs",
+          "ss_id": [
+            "1268"
+          ]
+        },
+        "category_icon": "https://images.meesho.com/images/marketing/1627308926506.png"
+      }
+    ]
+  }
+]

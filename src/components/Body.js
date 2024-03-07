@@ -11,7 +11,7 @@ export default Body = () => {
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch("http://localhost:3000/api/getBooks");
+    const data = await fetch("http://localhost:3000/products");
 
     const json = await data.json();
     setListOfBooks(json);
@@ -20,14 +20,6 @@ export default Body = () => {
   return (
     <div className="body">
       <div className="sub-header">
-        <button
-          className="filter-btn"
-          onClick={() => {
-            setListOfBooks(filteredBooks.filter((book) => book.Rating > 4.5));
-          }}
-        >
-          Top Rated Books
-        </button>
         <div className="search-container">
           <input
             type="text"
@@ -41,7 +33,7 @@ export default Body = () => {
             className="search-icon"
             onClick={() => {
               const filteredBooks = listOfBooks.filter((book) =>
-                book.title.toLowerCase().includes(searchText.toLowerCase())
+                book.name.toLowerCase().includes(searchText.toLowerCase())
               );
               setFilteredbooks(filteredBooks);
             }}
@@ -51,8 +43,8 @@ export default Body = () => {
         </div>
       </div>
       <div className="res-container">
-        {filteredBooks.map((book) => (
-          <BookCard key={book.id} booksData={book} />
+        {filteredBooks.map((product) => (
+          <BookCard key={product._id} productData={product} />
         ))}
       </div>
     </div>
