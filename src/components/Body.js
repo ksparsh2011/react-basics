@@ -1,5 +1,6 @@
 import BookCard from "./BookCard";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default Body = () => {
   const [listOfBooks, setListOfBooks] = useState([]);
@@ -44,7 +45,13 @@ export default Body = () => {
       </div>
       <div className="res-container">
         {filteredBooks.map((product) => (
-          <BookCard key={product._id} productData={product} />
+          <Link
+            className="product-link"
+            key={product._id}
+            to={"/products/" + product._id}
+          >
+            <BookCard productData={product} />
+          </Link>
         ))}
       </div>
     </div>

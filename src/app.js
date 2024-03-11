@@ -7,7 +7,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Footer from "./components/Footer";
 import Contact from "./components/ContactUs";
 import Error from "./components/Error";
-import BookDetailPage from "./components/BookDetailPage";
+import ProductDetail from "./components/ProductDetail";
 
 const AppLayout = () => {
   return (
@@ -37,8 +37,8 @@ const appRouter = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "/getBook/:bookId",
-        element: <BookDetailPage />,
+        path: "/products/:id",
+        element: <ProductDetail />,
       },
     ],
     errorElement: <Error />,

@@ -387,3 +387,14 @@ button:hover {
 .buy-btn:hover {
   background-color: #0056b3;
 }
+
+.product-link {
+  color: inherit; /* Preserve text color */
+  display: flex;
+  text-decoration: none; /* Remove underline */
+  margin-bottom: 20px;
+  overflow: hidden;
+  max-width: 300px; /* Limit card width */
+  margin: 0 auto; /* Center cards horizontally */
+  margin-bottom: 20px; /* Add margin between each link */
+}

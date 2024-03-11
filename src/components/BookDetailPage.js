@@ -5,10 +5,10 @@ const BookDetailPage = () => {
     fetchBookDetail();
   }, []);
 
-  const fetchBookDetail = async () => {
-    const data = await fetch("http://localhost:3000/api/getBooks");
-    const json = await data.json();
-  };
+  // const fetchBookDetail = async () => {
+  //   const data = await fetch("http://localhost:3000/api/getBooks");
+  //   const json = await data.json();
+  // };
 
   return (
     <div className="book-detail">
