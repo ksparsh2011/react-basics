@@ -20,36 +20,30 @@ export default Body = () => {
   };
   return (
     <div className="body">
-      <div className="sub-header">
-        <div className="search-container">
-          <input
-            type="text"
-            className="search-input"
-            placeholder="Search..."
-            onChange={(e) => {
-              setSearchText(e.target.value);
-            }}
-          ></input>
-          <i
-            className="search-icon"
-            onClick={() => {
-              const filteredBooks = listOfBooks.filter((book) =>
-                book.name.toLowerCase().includes(searchText.toLowerCase())
-              );
-              setFilteredbooks(filteredBooks);
-            }}
-          >
-            🔍
-          </i>
-        </div>
+      <div className="search-container mx-80 my-6 p-4 flex content-center rounded-l">
+        <input
+          type="text"
+          className="search-input border border-solid border-black"
+          placeholder="Search..."
+          onChange={(e) => {
+            setSearchText(e.target.value);
+          }}
+        ></input>
+        <button
+          class="h-12 px-5 text-black transition-colors duration-150 border border-black focus:shadow-outline hover:bg-black hover:text-white rounded-r"
+          onClick={() => {
+            const filteredBooks = listOfBooks.filter((book) =>
+              book.name.toLowerCase().includes(searchText.toLowerCase())
+            );
+            setFilteredbooks(filteredBooks);
+          }}
+        >
+          Search
+        </button>
       </div>
-      <div className="res-container">
+      <div className="flex flex-wrap">
         {filteredBooks.map((product) => (
-          <Link
-            className="product-link"
-            key={product._id}
-            to={"/products/" + product._id}
-          >
+          <Link key={product._id} to={"/products/" + product._id}>
             <BookCard productData={product} />
           </Link>
         ))}

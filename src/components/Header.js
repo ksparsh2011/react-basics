@@ -3,31 +3,31 @@ import { Link } from "react-router-dom";
 
 export default Header = () => {
   return (
-    <header className="header">
-      <div className="container">
-        <div className="logo">Pages &amp; Verses</div>
-        <nav className="navigation">
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <a href="#">Books</a>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
-        <div className="buttons">
-          <button className="login-btn">Login</button>
-          <button className="signup-btn">Sign Up</button>
-          <button className="cta-btn">Shop Now</button>
-        </div>
+    <div className="flex justify-between bg-black mb-2 shadow-lg">
+      <div className="w-56 p-4 m-4 text-white">
+        <Link to="/">Aesthetic Abode</Link>
       </div>
-    </header>
+      <nav className="navigation items-center">
+        <ul className="flex p-4 m-4 text-white">
+          <li className="px-4">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="px-4">
+            <a href="#">Books</a>
+          </li>
+          <li className="px-4">
+            <Link to="/about">About</Link>
+          </li>
+          <li className="px-4">
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </nav>
+      <div className="buttons p-4 m-4 text-white items-center">
+        <button className="login-btn px-4">Login</button>
+        <button className="signup-btn px-4">Sign Up</button>
+        <button className="cta-btn px-4">Shop Now</button>
+      </div>
+    </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -9,6 +10,7 @@ import Contact from "./components/ContactUs";
 import Error from "./components/Error";
 import ProductDetail from "./components/ProductDetail";
 
+const Cart = lazy(() => import("./components/Cart"));
 const AppLayout = () => {
   return (
     <div className="app">
@@ -39,6 +41,14 @@ const appRouter = createBrowserRouter([
       {
         path: "/products/:id",
         element: <ProductDetail />,
+      },
+      {
+        path: "/cart",
+        element: (
+          <Suspense fallback={<h1>Loading...</h1>}>
+            <Cart />
+          </Suspense>
+        ),
       },
     ],
     errorElement: <Error />,
