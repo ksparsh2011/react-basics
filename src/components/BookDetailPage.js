@@ -5,11 +5,6 @@ const BookDetailPage = () => {
     fetchBookDetail();
   }, []);
 
-  // const fetchBookDetail = async () => {
-  //   const data = await fetch("http://localhost:3000/api/getBooks");
-  //   const json = await data.json();
-  // };
-
   return (
     <div className="book-detail">
       <h1>Book Title</h1>

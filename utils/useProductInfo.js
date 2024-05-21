@@ -6,7 +6,7 @@ const useProductInfo = (id) => {
 
   useEffect(() => {
     fetchProductDetail();
-  }, []);
+  }, [id]); // Include id as a dependency to refetch when id changes
 
   const fetchProductDetail = async () => {
     try {
@@ -15,7 +15,7 @@ const useProductInfo = (id) => {
         throw new Error("Failed to fetch product details");
       }
       const json = await response.json();
-      setProductInfo(json);
+      setProductInfo(json.data); // Assuming json.data contains the product details
     } catch (error) {
       console.error("Error fetching product details:", error);
     }

@@ -1,7 +1,7 @@
 import { IMAGE_CDN } from "../../utils/constants";
 import { Button } from "antd";
 
-export default BookCard = (props) => {
+const BookCard = (props) => {
   const { productData } = props;
   const { name, description, price, category, thumbnailId } = productData;
   return (
@@ -31,3 +31,18 @@ export default BookCard = (props) => {
     </div>
   );
 };
+
+export const withPromotedLabel = (BookCard) => {
+  return (props) => {
+    return (
+      <div>
+        <label className="absolute bg-black text-white m-2 p-2 rounded-lg">
+          withPromoted
+        </label>
+        <BookCard {...props} />
+      </div>
+    );
+  };
+};
+
+export default BookCard;
